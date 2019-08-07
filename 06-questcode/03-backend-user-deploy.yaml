@@ -21,7 +21,10 @@ spec:
         - containerPort: 3020
         env:
         - name: NODE_ENV
-          value: "staging"
+          valueFrom:
+            configMapKeyRef:
+              name: quastcode
+              key: NODE_ENV
         - name: MONGO_URI
           value: "mongodb://dbuser:dbuser18@192.168.1.12:31133/base-dev"
         - name: SECRET_OR_KEY
