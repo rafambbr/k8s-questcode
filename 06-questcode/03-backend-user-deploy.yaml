@@ -23,6 +23,6 @@ spec:
         - name: NODE_ENV
           value: "staging"
         - name: MONGO_URL
-          values: "mongodb://dbuser:dbuser18@192.168.1.12:31133/base-dev"
+          value: "mongodb://dbuser:dbuser18@192.168.1.12:31133/base-dev"
         - name: SECRET_OR_KEY
           value: "b00tc4mp18"
