@@ -1,1 +1,1 @@
-kubectl apply -f 01-namespaces.yaml
+kubectl apply -f 02-frontend-deploy.yaml -n 
