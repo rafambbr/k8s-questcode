@@ -39,21 +39,21 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
-          - name: NODE_ENV
-            valueFrom:
-              configMapKeyRef:
-                name: questcode
-                key: NODE_ENV
-          - name: MONGO_URI
-            valueFrom:
-              secretKeyRef:
-                name: questcode
-                key: MONGO_URI
-          - name: SECRET_OR_KEY
-            valueFrom:
-              secretKeyRef:
-                name: questcode
-                key: SECRET_OR_KEY
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: questcode
+                  key: NODE_ENV
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: questcode
+                  key: MONGO_URI
+            - name: SECRET_OR_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: questcode
+                  key: SECRET_OR_KEY
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
