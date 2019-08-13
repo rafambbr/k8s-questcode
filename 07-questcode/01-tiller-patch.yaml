@@ -1,4 +1,4 @@
 spec:
   template:
     spec:
-      serviceAccoutName: tiller-02
+      serviceAccoutName: tiller
