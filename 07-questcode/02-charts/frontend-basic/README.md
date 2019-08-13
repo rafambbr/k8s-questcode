@@ -1,2 +1,2 @@
 #Install
-helm install . --name frontend --namespace default
+helm install . --name frontend-basic
